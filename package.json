@@ -1,0 +1,36 @@
+{
+  "name": "rfts",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "lint-staged": "turbo lint-staged",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "release": "SKIP_PREPARE_COMMIT=true npx standard-version",
+    "prepare": "husky"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/cz-commitlint": "^19.8.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.4",
+    "typescript": "5.8.3"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "description": "A project created by turbo-template",
+  "version": "0.0.0"
+}
